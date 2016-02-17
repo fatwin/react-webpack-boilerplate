@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-export default class User extends React.Component{
+export default class Product extends React.Component{
   render() {
-    return <div>So for I am just a fake product.</div>;
+    return <div>A placeholder of product.</div>;
   }
 }
