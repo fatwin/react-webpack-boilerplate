@@ -1,0 +1,51 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "node/node.d.ts": {
+      "commit": "dc9dabe74a5be62613b17a3605309783a12ff28a"
+    },
+    "react-router/history.d.ts": {
+      "commit": "fe563dff3428bac1260d1794e2c2ecf8f097535a"
+    },
+    "react-router/react-router.d.ts": {
+      "commit": "fe563dff3428bac1260d1794e2c2ecf8f097535a"
+    },
+    "react/react.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-create-fragment.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-global.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-css-transition-group.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-transition-group.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-linked-state-mixin.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-perf.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-test-utils.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-pure-render-mixin.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    },
+    "react/react-addons-update.d.ts": {
+      "commit": "bcd5761826eb567876c197ccc6a87c4d05731054"
+    }
+  }
+}
