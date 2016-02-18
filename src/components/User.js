@@ -1,7 +1,7 @@
-import * as React from 'react';
+import * as React from 'react'
 
-export default class User extends React.Component{
+export default class User extends React.Component {
   render() {
-    return <div>A placeholder of user.</div>;
+    return <div>A placeholder of user.</div>
   }
 }
