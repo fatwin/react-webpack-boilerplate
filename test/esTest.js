@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 class Person {
   /**
@@ -6,8 +6,8 @@ class Person {
    * @param {number} age The age of the person
    */
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+    this.name = name
+    this.age = age
   }
 }
 
@@ -17,15 +17,15 @@ class Person {
  * @param {number} age The age of the senior citizen
  */
 function SeniorCitizen(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = name
+  this.age = age
 }
 SeniorCitizen.prototype.greet = function greet() {
-  return this.name;
-};
+  return this.name
+}
 
-const p = new Person('Fatwin', 31);
-console.log(`${p.name} is ${p.age} years old.`);
+const p = new Person('Fatwin', 31)
+console.log(`${p.name} is ${p.age} years old.`)
 
-var sc = new SeniorCitizen('elder persion', 32);
-console.log('Greet,', sc.greet());
+var sc = new SeniorCitizen('elder persion', 32)
+console.log('Greet,', sc.greet())
