@@ -7,6 +7,12 @@ Then run
 ```
 npm install
 npm run dev
+```
+For vscode use, to enable intellisense, run
+```
+# Install Typings CLI utility.
+npm install typings --global
+typings install
 ``` 
 
 ## Including
