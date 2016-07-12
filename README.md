@@ -2,6 +2,8 @@
 The very basic bolierplate for React webapp development.
 
 ## Usage
+First you need to have node and npm installed.
+Then run
 ```
 npm install
 npm run dev
