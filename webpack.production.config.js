@@ -1,6 +1,6 @@
 // var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
-var node_modules = path.resolve(__dirname, 'node_modules');
+var path = require('path')
+var node_modules = path.resolve(__dirname, 'node_modules')
 // var pathReact = path.resolve(node_modules, 'react/dist/react.min.js');
 // var pathReactDOM = path.resolve(node_modules, 'react-dom/dist/react-dom.min.js');
 
@@ -35,6 +35,6 @@ var config = {
     extensions: ['', '.js', 'jsx', '.json']
   },
   // plugins: [new HtmlWebpackPlugin()]
-};
+}
 
-module.exports = config;
+module.exports = config

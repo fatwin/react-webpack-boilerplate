@@ -1,28 +1,31 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const node_modules = path.resolve(__dirname, 'node_modules');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const node_modules = path.resolve(__dirname, 'node_modules')
 // const pathReact = path.resolve(node_modules, 'react/dist/react.min.js');
 // const pathReactDOM = path.resolve(node_modules, 'react-dom/dist/react-dom.min.js');
 // const pathReactRouter = path.resolve(node_modules, 'react-router/dist/react-router.min.js');
-const devServerHost = '0.0.0.0';
-const devServerPort = 9090;
+const sourceDir = 'src'
+const outputDir = 'dist'
+const contentDir = path.join(outputDir)
+const devServerHost = '0.0.0.0'
+const devServerPort = 9090
 
 const config = {
   entry: [
-    'webpack-dev-server/client?http://' + devServerHost + ':' + devServerPort,
+    `webpack-dev-server/client?http://${devServerHost}:${devServerPort}/`,
     'webpack/hot/only-dev-server', // Do not auto reload when syntax error occurs
     // Indicate that it's inline mode，equivalent to use --inline in webpack CLI
-    path.resolve(__dirname, 'src/main.js')
+    path.resolve(__dirname, sourceDir, 'main.js')
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, outputDir),
     publicPath: '/', // This is used to generate URLs to e.g. images
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: 'dist',
-    // publicPath: '/',
+    contentBase: contentDir, // Useful without html-webpack-plugin.
+    publicPath: '/',         // This will tell webpack-dev-server where to find the static file. 
     historyApiFallback: true,
     hot: true,
     host: devServerHost,
@@ -61,9 +64,10 @@ const config = {
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       favicon: 'src/images/favicon.ico',
-      template: 'src/index.html',
+      template: path.join(sourceDir, 'index.html'),
+      title: 'Put your title here'
     })
   ]
-};
+}
 
-module.exports = config;
+module.exports = config
