@@ -38,7 +38,7 @@ const config = {
       {
         test: /\.jsx?$/,
         loaders: ['react-hot', 'babel'],
-        include: path.resolve(__dirname, 'src')
+        include: path.resolve(__dirname, sourceDir)
       },
       { test: /\.css$/, loaders: ['style', 'css'] },
       { test: /\.(png|jpe?g)$/, loader: 'url?name=[name]_[hash:6].[ext]&limit=8192' },

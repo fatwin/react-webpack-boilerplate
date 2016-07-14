@@ -2,13 +2,13 @@
 The very basic bolierplate for React webapp development.
 
 ## Usage
-First you need to have node and npm installed.  
-Then run
+First you need to have node with npm installed.  
+Go inside the repo folder then run
 ```
 npm install
 npm run dev
 ```
-For vscode use, to enable intellisense, run
+For vscode users, to enable intellisense, run
 ```
 # Install Typings CLI utility.
 npm install typings --global
