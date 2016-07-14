@@ -41,6 +41,7 @@ const config = {
         include: path.resolve(__dirname, sourceDir)
       },
       { test: /\.css$/, loaders: ['style', 'css'] },
+      // { test: /\.scss$/, loader: 'style!css!autoprefixer!sass' },
       { test: /\.(png|jpe?g)$/, loader: 'url?name=[name]_[hash:6].[ext]&limit=8192' },
       {
         test: /\.svg$/,
